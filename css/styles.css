@@ -127,12 +127,12 @@ header .header {
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
+  transition: var(--effect-hover-focus-transition);
 }
 
 .list-nav .link-nav:focus,
 .list-nav .link-nav:hover {
   color: #2196f3;
-  transition: var(--effect-hover-focus-transition);
 }
 
 /*-----------------навігація*/
@@ -183,16 +183,17 @@ header .header {
   justify-content: center;
   margin-left: auto;
   fill: #757575;
+  transition: var(--effect-hover-focus-transition);
 }
 
 .list-contacts svg {
   margin-right: 10px;
+  transition: var(--effect-hover-focus-transition);
 }
 
 .list-contacts .item:hover,
 .list-contacts .item:focus {
   fill: #2196f3;
-  transition: var(--effect-hover-focus-transition);
 }
 
 .header-tel:hover,
@@ -200,6 +201,10 @@ header .header {
 .header-mail:hover,
 .header-mail:focus {
   color: var(--link-hover-color);
+}
+
+.header-tel,
+.header-mail {
   transition: var(--effect-hover-focus-transition);
 }
 
@@ -209,7 +214,6 @@ header .header {
 .link-nav:focus,
 .link-nav:hover .list-contacts {
   font-weight: 500;
-  transition: var(--effect-hover-focus-transition);
 }
 
 /*------------------ГЕРОЙ------------------*/
@@ -268,11 +272,12 @@ header .header {
 
   width: 200px;
   height: 50px;
+
+  transition: var(--effect-hover-focus-transition);
 }
 
 .hero button:hover {
   background: #188ce8;
-  transition: var(--effect-hover-focus-transition);
 }
 /*------------------benefits---------------------*/
 div .work {
@@ -471,22 +476,22 @@ div .work {
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: var(--effect-hover-focus-transition);
 }
 
 .masters-social-link:hover,
 .masters-social-link:focus {
   background: #2196f3;
-  transition: var(--effect-hover-focus-transition);
 }
 
 .masters-social-link:hover .masters-social-icon,
 .masters-social-link:focus .masters-social-icon {
   fill: #ffffff;
-  transition: var(--effect-hover-focus-transition);
 }
 
 .masters-social-icon {
   fill: #afb1b8;
+  transition: var(--effect-hover-focus-transition);
 }
 
 /*----------------постійні клієнти*/
@@ -521,13 +526,16 @@ div .work {
   justify-content: center;
   fill: #afb1b8;
   height: 100%;
+
+  transition: var(--effect-hover-focus-transition);
 }
 
 .clients-item {
   border: 1px solid #afb1b8;
   border-radius: 4px;
-  width: 160px;
+  width: 170px;
   height: 92px;
+  transition: var(--effect-hover-focus-transition);
 }
 
 .clients-item:not(:last-child) {
@@ -537,13 +545,11 @@ div .work {
 .clients-item:hover,
 .clients-link:focus {
   border-color: #2196f3;
-  transition: var(--effect-hover-focus-transition);
 }
 
 .clients-link:hover,
 .clients-link:focus {
   fill: #2196f3;
-  transition: var(--effect-hover-focus-transition);
 }
 
 /*--------------------footer--*/
@@ -575,21 +581,12 @@ footer .container {
 }
 
 .footer-mail:hover,
-.footer-mail:focus {
-  color: var(--link-hover-color);
-  transition: var(--effect-hover-focus-transition);
-}
-
+.footer-mail:focus,
 .footer-tel:hover,
-.footer-tel:focus {
-  color: var(--link-hover-color);
-  transition: var(--effect-hover-focus-transition);
-}
-
+.footer-tel:focus,
 .footer-adress:hover,
 .footer-adress:focus {
   color: var(--link-hover-color);
-  transition: var(--effect-hover-focus-transition);
 }
 
 .footer-adress,
@@ -598,6 +595,8 @@ footer .container {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+
+  transition: var(--effect-hover-focus-transition);
 }
 
 .footer-adress {
@@ -643,12 +642,12 @@ footer .container {
   margin: 0;
   padding: 0;
   background: rgba(255, 255, 255, 0.1);
+  transition: var(--effect-hover-focus-transition);
 }
 
 .social-join-link:hover,
 .social-join-link:focus {
   background: #2196f3;
-  transition: var(--effect-hover-focus-transition);
 }
 
 .social-join-icon {
@@ -665,13 +664,14 @@ li [type] {
   font-size: 16px;
   line-height: 1.62;
   letter-spacing: 0.03em;
+
+  transition: var(--effect-hover-focus-transition);
 }
 
 li [type]:focus,
 li [type]:hover {
   color: #ffffff;
   background-color: #2196f3;
-  transition: var(--effect-hover-focus-transition);
 }
 
 /*-----------------навігація портфоліо*/
@@ -686,7 +686,6 @@ li [type]:hover {
 .nav-portfolio .portfolio-button:focus {
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
-  transition: var(--effect-hover-focus-transition);
 }
 
 .nav-portfolio li:not(:last-child) {
@@ -699,6 +698,7 @@ li [type]:hover {
   line-height: 16.2;
   padding: 6px 22px;
   cursor: pointer;
+  transition: var(--effect-hover-focus-transition);
 }
 
 /*-----------------Портфолио*/
@@ -711,11 +711,11 @@ li [type]:hover {
 .link-portfolio-wrap {
   position: relative;
   overflow: hidden;
+  transition: var(--effect-hover-focus-transition);
 }
 
 .link-portfolio-wrap:hover .text-img {
   transform: translateY(0);
-  transition: var(--effect-hover-focus-transition);
 }
 
 .text-img {
@@ -752,6 +752,9 @@ li [type]:hover {
 .list-portfolio:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+.link-portfolio {
   transition: var(--effect-hover-focus-transition);
 }
 
