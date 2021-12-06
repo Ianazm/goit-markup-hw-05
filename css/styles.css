@@ -736,8 +736,7 @@ li [type]:hover {
   background-color: rgba(33, 150, 243, 0.9);
   overflow: auto;
   transform: translateY(100%);
-  transition: transform var(--effect-hover-focus-transition) linear
-    cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform var(--effect-hover-focus-transition) linear;
 }
 
 .list-portfolio li:nth-child(3n + 2) {
