@@ -127,7 +127,7 @@ header .header {
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
-  transition: var(--effect-hover-focus-transition);
+  transition: var(--effect-hover-focus-transition) cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .list-nav .link-nav:focus,
@@ -183,12 +183,12 @@ header .header {
   justify-content: center;
   margin-left: auto;
   fill: #757575;
-  transition: var(--effect-hover-focus-transition);
+  transition: var(--effect-hover-focus-transition) cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .list-contacts svg {
   margin-right: 10px;
-  transition: var(--effect-hover-focus-transition);
+  transition: var(--effect-hover-focus-transition) cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .list-contacts .item:hover,
@@ -205,7 +205,7 @@ header .header {
 
 .header-tel,
 .header-mail {
-  transition: var(--effect-hover-focus-transition);
+  transition: var(--effect-hover-focus-transition) cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .list-nav .current {
@@ -273,7 +273,7 @@ header .header {
   width: 200px;
   height: 50px;
 
-  transition: var(--effect-hover-focus-transition);
+  transition: var(--effect-hover-focus-transition) cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hero button:hover {
@@ -476,7 +476,7 @@ div .work {
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: var(--effect-hover-focus-transition);
+  transition: var(--effect-hover-focus-transition) cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .masters-social-link:hover,
@@ -491,7 +491,7 @@ div .work {
 
 .masters-social-icon {
   fill: #afb1b8;
-  transition: var(--effect-hover-focus-transition);
+  transition: var(--effect-hover-focus-transition) cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /*----------------постійні клієнти*/
@@ -527,7 +527,7 @@ div .work {
   fill: #afb1b8;
   height: 100%;
 
-  transition: var(--effect-hover-focus-transition);
+  transition: var(--effect-hover-focus-transition) cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .clients-item {
@@ -535,7 +535,7 @@ div .work {
   border-radius: 4px;
   width: 170px;
   height: 92px;
-  transition: var(--effect-hover-focus-transition);
+  transition: var(--effect-hover-focus-transition) cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .clients-item:not(:last-child) {
@@ -596,7 +596,7 @@ footer .container {
   line-height: 1.71;
   letter-spacing: 0.03em;
 
-  transition: var(--effect-hover-focus-transition);
+  transition: var(--effect-hover-focus-transition) cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-adress {
@@ -642,7 +642,7 @@ footer .container {
   margin: 0;
   padding: 0;
   background: rgba(255, 255, 255, 0.1);
-  transition: var(--effect-hover-focus-transition);
+  transition: var(--effect-hover-focus-transition) cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-join-link:hover,
@@ -665,7 +665,7 @@ li [type] {
   line-height: 1.62;
   letter-spacing: 0.03em;
 
-  transition: var(--effect-hover-focus-transition);
+  transition: var(--effect-hover-focus-transition) cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 li [type]:focus,
@@ -698,7 +698,7 @@ li [type]:hover {
   line-height: 16.2;
   padding: 6px 22px;
   cursor: pointer;
-  transition: var(--effect-hover-focus-transition);
+  transition: var(--effect-hover-focus-transition) cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /*-----------------Портфолио*/
@@ -711,7 +711,7 @@ li [type]:hover {
 .link-portfolio-wrap {
   position: relative;
   overflow: hidden;
-  transition: var(--effect-hover-focus-transition);
+  transition: var(--effect-hover-focus-transition) cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .link-portfolio-wrap:hover .text-img {
@@ -736,7 +736,8 @@ li [type]:hover {
   background-color: rgba(33, 150, 243, 0.9);
   overflow: auto;
   transform: translateY(100%);
-  transition: transform var(--effect-hover-focus-transition) linear;
+  transition: transform var(--effect-hover-focus-transition) linear
+    cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .list-portfolio li:nth-child(3n + 2) {
@@ -755,7 +756,7 @@ li [type]:hover {
 }
 
 .link-portfolio {
-  transition: var(--effect-hover-focus-transition);
+  transition: var(--effect-hover-focus-transition) cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .title-card {
@@ -819,7 +820,8 @@ li [type]:hover {
 
 .backdrop.is-hidden .modal {
   transform: scale(1.5) rotate(180deg) translate(-1000px);
-  transition: transform var(--effect-hover-focus-transition);
+  transition: transform var(--effect-hover-focus-transition)
+    cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal {
@@ -836,7 +838,8 @@ li [type]:hover {
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
 
-  transition: transform var(--effect-hover-focus-transition);
+  transition: transform var(--effect-hover-focus-transition)
+    cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-close {
