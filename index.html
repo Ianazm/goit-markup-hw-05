@@ -49,11 +49,11 @@
             <div class="container hero-container">
 <!-------------ГЕРОЙ-->
             <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-            <button class="hero-button" type="button" data-modal-open>Заказать услугу</button>
+            <button class="hero-button btn" type="button" data-modal-open>Заказать услугу</button>
             </div>
         </section>
         <div class=" work">
-            <h2 class="hidden-title">Benefits</h2>
+            <h2 class="visual-hidden">Benefits</h2>
           <section class="section no-padding">
             <div class="benefits container">
             <ul class="list">
@@ -329,56 +329,150 @@
     </main>
     <!-----------------------Підвал--------------------->
     <footer class="footer">
-        <div class="container">
-            <div class="footer-box">
-        <p>
-            <a href="" class="logo">Web<span class="logo-color-footer">Studio</span></a>
-        </p>
-        <address class="footer-adress">г. Киев, пр-т Леси Украинки, 26</address>
-<!-------------------підвалу Контакти-->
-        <ul>
-            <li class="footer-list"><a href="mailto:info@example.com" class="footer-mail">info@example.com</a></li>
-            <li class="footer-list"><a href="tel:+380991111111" class="footer-tel">+38 099 111 11 11</a></li>
-        </ul>
-        </div>
-<!-----------------------------ПРИСОЕДИНЯЙСЯ-->
-        <div class="">
-            <h2 class="title-footer">присоединяйтесь</h2>
-            <ul class="social-join-list">
-                <li class="social-join-item">
-                    <a href="" class="social-join-link">
-                        <svg class="social-join-icon" width="20px" height="20px">
-                            <use href="./images/svg/icons.svg#icon-instagram"></use>
-                        </svg>
-                    </a>
-                </li>
-                <li class="social-join-item">
-                    <a href="" class="social-join-link">
-                        <svg class="social-join-icon" width="20px" height="20px">
-                            <use href="./images/svg/icons.svg#icon-twitter"></use>
-                        </svg>
-                    </a>
-                </li>
-                <li class="social-join-item">
-                    <a href="" class="social-join-link">
-                        <svg class="social-join-icon" width="20px" height="20px">
-                            <use href="./images/svg/icons.svg#icon-facebook"></use>
-                        </svg>
-                    </a>
-                </li>
-                <li class="social-join-item">
-                    <a href="" class="social-join-link">
-                        <svg class="social-join-icon" width="20px" height="20px">
-                            <use href="./images/svg/icons.svg#icon-linkedin"></use>
-                        </svg>
-                    </a>
-                </li>
-            </ul>
+        <div class="footer-flex">
+            <div class="container">
+                <div class="footer-box">
+                    <p>
+                        <a href="" class="logo">Web<span class="logo-color-footer">Studio</span></a>
+                    </p>
+                    <address class="footer-adress">г. Киев, пр-т Леси Украинки, 26</address>
+                    <!-------------------підвалу Контакти-->
+                    <ul>
+                        <li class="footer-list"><a href="mailto:info@example.com" class="footer-mail">info@example.com</a></li>
+                        <li class="footer-list"><a href="tel:+380991111111" class="footer-tel">+38 099 111 11 11</a></li>
+                    </ul>
+                </div>
+                <!-----------------------------ПРИСОЕДИНЯЙСЯ-->
+                <div class="join-footer">
+                    <h2 class="title-footer">присоединяйтесь</h2>
+                    <ul class="social-join-list">
+                        <li class="social-join-item">
+                            <a href="" class="social-join-link">
+                                <svg class="social-join-icon" width="20px" height="20px">
+                                    <use href="./images/svg/icons.svg#icon-instagram"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="social-join-item">
+                            <a href="" class="social-join-link">
+                                <svg class="social-join-icon" width="20px" height="20px">
+                                    <use href="./images/svg/icons.svg#icon-twitter"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="social-join-item">
+                            <a href="" class="social-join-link">
+                                <svg class="social-join-icon" width="20px" height="20px">
+                                    <use href="./images/svg/icons.svg#icon-facebook"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="social-join-item">
+                            <a href="" class="social-join-link">
+                                <svg class="social-join-icon" width="20px" height="20px">
+                                    <use href="./images/svg/icons.svg#icon-linkedin"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <!--Подпишитесь на рассылку-->
+                <div class="">
+                    <h2 class="title-subscription">Подпишитесь на рассылку</h2>
+                    <div class="subscription">
+                        <form action="#">
+                            <label class="label-subscription">
+                                <input type="email" class="input-subscription" placeholder="E-mail">
+                            </label>
+                        </form>
+                        <button class="btn btn-subscription" type="button" width="200" height="50">Подписаться
+                            <svg class="social-join-icon icon-subscription" width="24px" height="24px">
+                                <use href="./images/svg/icons.svg#icon-telegram"></use>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
             </div>
         </div>
     </footer>
+    <!-----------------------------------------Модалка-->
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">
+            <h2 class="modal-title">Оставьте свои данные, мы вам перезвоним</h2>
+            <form action="#" class="modal-form">
+                    <div class="modal-field">
+                        <label for="user-name" class="label-modal">Имя
+                            </label>
+                            <div class="input-wrap">
+                            <input
+                        id="user-name"     
+                        type="text" 
+                        class="modal-input" 
+                        name="user-name"
+                        placeholder=""
+                        required
+                        title="" 
+                        pattern="">
+                          <svg class="input-icon" width="12px" height="12px">
+                            <use href="./images/svg/icons.svg#icon-user"></use>
+                          </svg>
+                        </div>
+                    </div>
+                    <div class="modal-field">
+                        <label for="user-tel" class="label-modal">Телефон
+                            </label>
+                            <div class="input-wrap">
+                                <input
+                            id="user-tel"     
+                            type="tel" 
+                            class="modal-input" 
+                            name="user-tel" 
+                            placeholder=""
+                            required
+                            title=""
+                            pattern="">
+                              <svg class="input-icon" width="13px" height="13px">
+                                <use href="./images/svg/icons.svg#icon-telephone-modal"></use>
+                              </svg>
+                            </div>
+                    </div>
+                    <div class="modal-field">
+                        <label for="user-email" class="label-modal">Почта
+                            </label>
+                            <div class="input-wrap">
+                            <input
+                        id="user-email"     
+                        type="email" 
+                        class="modal-input" 
+                        name="user-email" 
+                        placeholder=""
+                        title=""
+                        pattern="">
+                           <svg class="input-icon" width="18px" height="15px">
+                            <use href="./images/svg/icons.svg#icon-black-letter"></use>
+                           </svg>
+                           </div>
+                    </div>
+                    <div class="modal-field">
+                        <label for="textarea" class="label-modal">Комментарий
+                            </label>
+                            <textarea name="" 
+                            placeholder="Введите текст"
+                            id="textarea"
+                            class="textarea-modal"></textarea>
+                    </div>
+                    <div class="modal-field">
+                        <input type="checkbox" name="policy" id="policy" class="modal-check visual-hidden">
+                        <label for="policy" class="check-text">
+                            <span class="check-item">
+                                <svg class="check-icon" width="16px" height="15px">
+                                    <use href="./images/svg/icons.svg#icon-done"></use>
+                                </svg>
+                            </span> Соглашаюсь с рассылкой и принимаю Условия договора</label>
+                    </div>
+                        <button type="submit" class="btn">Отправить</button>
+            </form>
+            <!--кнопка закриття модалкі-->
             <button type="button" class="modal-close" data-modal-close>
                 <svg class="modal-close-icon" width="11px" height="11px">
                     <use href="./images/svg/icons.svg#icon-close" ></use>
@@ -386,6 +480,7 @@
             </button>
         </div>
     </div>
+    <!--JavaScript-->
     <script src="./js/modal.js"></script>
 </body>
 
